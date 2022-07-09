@@ -10,7 +10,7 @@ router.get('/:uuid',async (req,res)=>{
             uuid: file.uuid,
             fileName: file.filename,
             fileSize: file.size,
-            download: `http://localhost:3000/files/download/${file.uuid}`
+            download: `https://kwikshare.herokuapp.com/files/download/${file.uuid}`
             //http://localhost:3000/files/download/ddnvjv-sklcvsjcdnmckdmcd
         })
     }catch(err){
