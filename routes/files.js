@@ -40,7 +40,7 @@ router.post('/',(req,res)=>{
         });
 
         const response = await file.save();
-        return res.json({file: `http://localhost:3000/files/${response.uuid}`});
+        return res.json({file: `https://kwikshare.herokuapp.com/files/${response.uuid}`});
         // http://localhost:3000/files/23463gjgjf-3jjdk    
     })
 
@@ -76,7 +76,7 @@ router.post('/send',async (req,res)=>{
         text: `${emailFrom} shared a file with you`,
         html: require('../services/emailTemplate')({
             emailFrom: emailFrom,
-            downloadLink: `http://localhost:3000/files/${file.uuid}?source=email`,
+            downloadLink: `https://kwikshare.herokuapp.com/files/${file.uuid}?source=email`,
             size: parseInt(file.size/1000)+'KB',
             expires: '24 hours'
         })
