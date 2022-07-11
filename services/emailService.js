@@ -2,16 +2,16 @@ const nodemailer = require('nodemailer');
 
 module.exports=async ({ from, to, subject, text, html}) => {
     let transporter= nodemailer.createTransport({
-        host: 'smtp-relay.sendinblue.com',
-        port: 587,
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
         secure: false,
         auth: {
-            user: 'wasnikkhush@gmail.com',
-            pass: 'BFLxj0ZQKOtzwH7m'
+            user: process.env.MAIL_USER,
+            pass: process.env.MAIL_PASS
         }
     });
     let info =await transporter.sendMail({
-        from : `Sharefile <${from}>`,
+        from : `Kwikshare <${from}>`,
         to,
         subject,
         text,

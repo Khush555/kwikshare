@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 require('dotenv').config();
-function connectDB(){
-mongoose.connect('mongodb+srv://Khush:Q2rPblDYED6Qnzve@cluster0.gedgs.mongodb.net/?retryWrites=true&w=majority',(err)=>{
+function connectDB(){  
+mongoose.connect(process.env.MONGO_CONNECTION_URL,(err)=>{
     if(!err)
     console.log('Database connected');
     else console.log('Connection Failed');
