@@ -72,7 +72,7 @@ router.post('/send',async (req,res)=>{
     sendMail({
         from: emailFrom,
         to: emailTo,
-        subject: 'ShareFile file sharing',
+        subject: 'KwikShare - A new file was shared with you',
         text: `${emailFrom} shared a file with you`,
         html: require('../services/emailTemplate')({
             emailFrom: emailFrom,
