@@ -11,7 +11,7 @@ connectDB();
 
 //cors
 const corsOptions = {
-    origin: "http://127.0.0.1:3000"
+    origin: "http://127.0.0.1:3000,https://khush555.github.io"
     
 }
 app.use(cors(corsOptions));
