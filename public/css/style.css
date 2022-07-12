@@ -18,9 +18,9 @@
   }
 
   .logo {
-    position: relative;
-    top: -225px;
-    left: 330px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
     width: 150px;
   }
 section.download {
