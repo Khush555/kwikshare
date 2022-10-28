@@ -63,3 +63,12 @@ section.download {
       box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3 ;
       transition-delay: .1s;
   }
+@media screen and (max-width: 700px) {
+    body{
+      overflow-x: hidden;
+    }
+    section.download{
+      flex-direction: column;
+      width: 280px;
+    }
+  }
