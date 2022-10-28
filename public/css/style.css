@@ -71,4 +71,9 @@ section.download {
       flex-direction: column;
       width: 280px;
     }
+    .logo{
+      position: absolute;
+      top: 165px;
+      left: 100px;
+    }
   }
