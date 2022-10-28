@@ -75,6 +75,6 @@ section.download {
     .logo{
       position: absolute;
       top: 45px;
-      left: 85px;
+      left: auto;
     }
   }
