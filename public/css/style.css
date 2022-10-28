@@ -2,6 +2,7 @@
     --main-bg-color: #edf5fe;
     --light-blue: #03a9f4;
     --dark-blue: #031321;
+    --border-color: rgb(14 88 239 / 24%)
   }
 
   body {
@@ -29,7 +30,7 @@ section.download {
     left: -65px;
     position: relative;
     border-radius: 25px;
-    box-shadow: 0px 0px 0px 3px rgb(14 88 239 / 24%);
+    box-shadow: 0px 0px 0px 3px var(--border-color);
     padding: 2rem;
     text-align: center;
     
