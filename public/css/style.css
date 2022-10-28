@@ -69,11 +69,12 @@ section.download {
     }
     section.download{
       flex-direction: column;
-      width: 280px;
+      width: 215px;
+      left: -5px;
     }
     .logo{
       position: absolute;
-      top: 165px;
-      left: 100px;
+      top: 45px;
+      left: 85px;
     }
   }
